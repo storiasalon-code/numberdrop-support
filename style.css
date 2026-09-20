@@ -1,0 +1,32 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+  color: #262626;
+  background: #fff;
+  line-height: 1.85;
+  -webkit-text-size-adjust: 100%;
+}
+* { box-sizing: border-box; }
+body { max-width: 800px; margin: 0 auto; padding: 48px 24px 28px; overflow-wrap: anywhere; }
+header { margin-bottom: 28px; }
+h1 { font-size: clamp(1.5rem, 5vw, 2rem); line-height: 1.5; margin: 0; }
+h2 { font-size: 1.2rem; line-height: 1.6; margin: 0 0 14px; }
+p { margin: 0 0 16px; }
+.app-name { color: #555; margin-bottom: 8px; font-size: .95rem; }
+section { margin-top: 36px; }
+ul { padding-left: 1.5em; margin: 0 0 18px; }
+li { margin: 4px 0; }
+a { color: #245784; text-underline-offset: 4px; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 3px solid #245784; outline-offset: 5px; }
+.button { display: inline-block; max-width: 100%; padding: 12px 20px; background: #292929; border: 1px solid #292929; border-radius: 5px; color: #fff; text-align: center; text-decoration: none; font-weight: 600; }
+.button:hover { background: #454545; }
+.updated { margin-top: 24px; color: #555; }
+footer { margin-top: 48px; padding-top: 22px; border-top: 1px solid #ddd; font-size: .875rem; color: #555; }
+footer p { margin-bottom: 8px; }
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+footer a { display: inline-block; padding: 8px 0; }
+@media (max-width: 480px) {
+  body { padding: 28px 20px 24px; }
+  section { margin-top: 28px; }
+}
