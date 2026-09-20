@@ -2,14 +2,14 @@
 
 iOSゲーム「数字ドロップ」のApp Store申請に使用する、プライバシーポリシーとサポートページです。HTML/CSSだけで動作し、JavaScript、ビルド作業、外部フォント、広告はありません。メールアドレスはWebページに掲載しません。
 
-## 公開予定URL / App Store Connectで使用するURL
+## 公開URL / App Store Connectで使用するURL
 
 GitHubアカウント `storiasalon-code`、リポジトリ `numberdrop-support` の場合：
 
 - **プライバシーポリシーURL**：https://storiasalon-code.github.io/numberdrop-support/privacy.html
 - **サポートURL**：https://storiasalon-code.github.io/numberdrop-support/support.html
 
-公開完了と下記の申請前確認が済んでから、App Store Connectの各欄へ入力してください。アカウントまたはリポジトリ名を変更した場合はURLも変わります。
+GitHub Pagesで公開済みです。下記の申請前確認が済んでから、App Store Connectの各欄へ入力してください。アカウントまたはリポジトリ名を変更した場合はURLも変わります。
 
 ## ファイル
 
@@ -61,10 +61,18 @@ GitHubアカウント `storiasalon-code`、リポジトリ `numberdrop-support` 
 - [ ] 実際に使用していない外部サービスを削除し、プライバシーポリシーを実装と一致させた
 - [ ] 仮の問い合わせURLを回答者用GoogleフォームURLへ変更した
 - [ ] 問い合わせフォームで実際に送信・受信できた
-- [ ] 両方のページをHTTPSの直接URLから開けた（404にならない）
-- [ ] ログアウト状態でも両ページを閲覧できた
-- [ ] スマートフォンとPCで文字・余白・ボタンを確認した
-- [ ] 日本語が文字化けせず、ページ間リンクとフッターリンクが動いた
+- [x] 両方のページをHTTPSの直接URLから開けた（404にならない）
+- [x] 認証情報・CookieなしのHTTPリクエストでも両ページを閲覧できた
+- [x] ブラウザのスマートフォン幅320px・375pxとPC幅1280pxで表示を確認した（実機検証は未実施）
+- [x] 日本語が文字化けせず、ページ間リンクが動いた。フッターのリンク先も正常な公開URLと一致した
 - [ ] App Store Connectのプライバシー回答と、実装・ポリシーの内容が一致している
 
 ページの公開と、App Storeへの申請準備完了は別です。仮URLや未確定のサービス記載が残る状態では、申請用として完成したとは扱わないでください。
+
+## 公開確認記録（2026年9月20日）
+
+- リポジトリ：https://github.com/storiasalon-code/numberdrop-support
+- `main` ブランチの `/ (root)` から公開。HTTPS強制が有効です。
+- `privacy.html`・`support.html`・`style.css` のHTTP 200、UTF-8、ローカルファイルとの一致を確認しました。
+- 外部サービスはGame Centerのみ掲載。広告に関する条件付きの文章は依頼時の原稿を残しています。広告を表示しない場合は、広告に関するデータ・目的・第4節を実態に合わせて修正してください。
+- お問い合わせボタンは仮URLへの遷移を確認済みですが、Googleのログイン画面へ移動します。実際の問い合わせフォームへの差し替えと送受信確認は未完了です。
